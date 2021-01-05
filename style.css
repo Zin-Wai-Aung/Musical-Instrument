@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+  height:100vh;
+  background:url('image/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:#fff;
+  font-family: 'Satisfy', cursive;
+}
+.record-box{
+  width:1050px;
+  height:50px;
+  /* background:blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top:50px;
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+}
+.record-box input{
+  width:890px;
+  height:30px;
+  border-radius: 20px;
+  background:transparent;
+  color:#fff;
+  border:1px solid #fff;
+  font-family: 'Satisfy', cursive;
+  outline:none;
+  padding: 5px;
+  margin: 5px;
+}
+.saveBtn{
+  background:#B78643;
+  width: 110px;
+  height:45px;
+  margin: 10px;
+  border:1px solid #61227D;
+  border-radius:20px;
+  outline:none;
+  font-family: 'Satisfy', cursive;
+}
+.replayBtn{
+  width:100px;
+  padding: 5px;
+  background:#B78643;
+  border:1px solid #61227D;
+  border-radius:20px;
+  outline:none;
+  font-family: 'Satisfy', cursive;
+}
+.saveBtn:hover,.replayBtn:hover{
+  background:transparent;
+  color:#fff;
+}
+  .music{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .drum{
+    width:500px;
+    height: 280px;
+    position: relative;
+  }
+  .piano {
+    display: flex;
+    position: relative;
+    top:50px;
+    margin-right: 20px;
+  }
+  
+  .white-key {
+    width: 45px;
+    height: 140px;
+    background-color: #FFF;
+    border: 3px solid black;
+    border-top:15px solid #000;
+    border-radius: 0 0 10px 10px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .black-key {
+    position: absolute;
+    top:10px;
+    width: 24px;
+    height: 80px;
+    background-image:linear-gradient(to bottom,#000,#555);
+    border: 3px solid black;
+    border-radius: 0 0 4px 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .white-key.active {
+    background-color: #aaa;
+
+  }
+
+  .Db4-key {
+    left: 26px;
+  }
+  
+  .Eb4-key {
+    left: 67px;
+  }
+  
+  .Gb4-key {
+    left: 150px;
+  }
+  
+  .Ab4-key {
+    left: 190px;
+  }
+  
+  .Bb4-key {
+    left: 230px;
+  }
+  
+  .Db5-key {
+    left: 315px;
+  }
+  
+  .Eb5-key {
+    left: 355px;
+  }
+  .black-key.active {
+    background-image: linear-gradient(#333,#aaa);
+  }
+  .crash{
+    position: absolute;
+    top:40px;
+    left:50px;
+    z-index:1;
+  }
+  .crash.active{
+    transform:skew(5deg);
+
+  }
+  .small{
+    position: absolute;
+    top:94px;
+    left:170px;
+    z-index:1;
+  }
+  .small.active{
+    transform: scale(1.1);
+  }
+  .medium{
+    position: absolute;
+    top:80px;
+    left:283px;
+    z-index:1;
+  }
+  .medium.active{
+    transform:scale(1.1);
+  }
+  .ride{
+    position: absolute;
+    top:40px;
+    right:0px;
+    z-index:2;
+  }
+  .ride.active{
+    transform: skew(8deg);
+  }
+  .hihat{
+    position: absolute;
+    bottom:90px;
+    left:10px;
+    z-index:1;
+  }
+  .hihat.active{
+    transform: skew(10deg);
+  }
+  .snare{
+    position: absolute;
+    bottom:10px;
+    left:80px;
+    z-index:1;
+  }
+  .snare.active{
+    transform: scale(1.1);
+  }
+  .bass{
+    position:absolute;
+    bottom:0px;
+    left:200px;
+    z-index:0;
+  }
+  .bass.active{
+    transform:translateY(5px);
+  }
+  .floor{
+    position: absolute;
+    bottom:-15px;
+    right:-10px;
+  }
+  .floor.active{
+    transform: scale(1.1);
+  }
+  .splash{
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+    z-index:1;
+  }
+  .splash.active{
+    transform:skew(11deg);
+  }
+  .list{
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  .list li{
+    margin:7px 0;
+  }
+  @media screen and (max-width: 900px) {
+    body{
+      height:150vh;
+      width:140%;
+    }
+    .record-box{
+      width:100%;
+    }
+    .saveBtn{
+      width:80%;
+    }
+    .music{
+       display: inline-block;
+    }
+    .piano{
+      margin-left: 30px;
+      width: 100%;
+    }
+    .list{
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+  }

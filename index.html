@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Instrument</title>
+  <link rel="icon" href="image/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+</head>
+<body>
+    <div class="record-box">
+      <input type="text" id="cord">
+      <button onclick="saveCord()" class="saveBtn">Save</button>
+    </div>
+
+  <div class="music">
+    <div class="drum">
+      <img src="image/crash.png" width="120px" height="80px" onclick="play('crash')" class="crash">
+  
+      <img src="image/left.png" width="95px" height="95px" onclick="play('small')" class="small">
+  
+      <img src="image/right.png" width="110px" height="115px" onclick="play('medium')" class="medium">
+  
+      <img src="image/ride.png" width="120px" height="80px" onclick="play('ride')" class="ride">
+  
+      <img src="image/hihat.png" width="90px" height="75px" onclick="play('hihat')" class="hihat">
+  
+      <img src="image/snare.png" width="120px" height="110px" onclick="play('snare')" class="snare">
+  
+      <img src="image/bass.png" width="150px" height="170px" onclick="play('bass')" class="bass">
+  
+      <img src="image/left.png" width="130px" height="140px" onclick="play('floor')" class="floor">
+  
+      <img src="image/splash.png" width="85px" height="70px" onclick="play('splash')" class="splash">
+  
+    </div>
+    <div class="piano">
+      <button class="white-key C4-key" onclick="play('C4')"></button>
+      <button class="black-key Db4-key" onclick="play('Db4')"></button>
+      <button class="white-key D4-key"  onclick="play('D4')"></button>
+      <button class="black-key Eb4-key" onclick="play('Eb4')"></button>
+      <button class="white-key E4-key" onclick="play('E4')"></button>
+      <button class="white-key F4-key" onclick="play('F4')"></button>
+      <button class="black-key Gb4-key" onclick="play('Gb4')"></button>
+      <button class="white-key G4-key" onclick="play('G4')"></button>
+      <button class="black-key Ab4-key" onclick="play('Ab4')"></button>
+      <button class="white-key A4-key" onclick="play('A4')"></button>
+      <button class="black-key Bb4-key" onclick="play('Bb4')"></button>
+      <button class="white-key B4-key" onclick="play('B4')"></button>
+      <button class="white-key C5-key" onclick="play('C5')"></button>
+      <button class="black-key Db5-key" onclick="play('Db5')"></button>
+      <button class="white-key D5-key" onclick="play('D5')"></button>
+      <button class="black-key Eb5-key" onclick="play('Eb5')"></button>
+      <button class="white-key E5-key" onclick="play('E5')"></button>
+    </div>
+  </div>
+  <ul class="list"> </ul>
+  <script src="script.js"></script>
+</body>
+</html>
